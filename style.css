@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Candal&family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Candal&family=Hammersmith+One&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(48, 46, 46);
+}
+
+main{
+    background-color: black;
+}
+
+#main-content-layout{
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    min-height: 100vh;
+}
+
+#news-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 400px;
+    gap: 2rem;
+}
+
+#left-side{
+    border-right: 2px solid rgb(48, 46, 46);
+}
+
+#right-side{
+    border-left: 2px solid rgb(48, 46, 46);
+}
+
+#main-menu ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    gap: 1rem;
+    font-family: "Outfit", sans-serif;
+}
+
+#main-menu ul{
+    display: flex;
+    text-decoration: none;
+    gap: 3rem;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    list-style: none;
+}
+
+#site-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+#site-logo img{
+    width: 10%;
+    margin-left: 5rem;
+}
+
+#site-logo h1{
+    color: white;
+    padding: 1rem;
+    padding-left: 0.25rem;
+    font-weight: 300;
+    font-family: "Cal Sans", sans-serif;  
+}
+
+#lateral-direita{
+    background-color: #2FF0E8;
+
+}
+
+#lateral-esquerda{
+    background-color: #2FF0E8;
+}
+
+#sidebar{
+    grid-column: 4 / 5;
+}

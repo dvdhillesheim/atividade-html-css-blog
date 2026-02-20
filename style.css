@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Candal&family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Candal&family=Hammersmith+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Candal&family=Hammersmith+One&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     padding: 0;
@@ -15,15 +11,15 @@ body{
     color: white;
 }
 
+a{
+    text-decoration: none;
+}
+
 #main-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid rgb(48, 46, 46);
-}
-
-main{
-    background-color: black;
 }
 
 #main-content-layout{
@@ -32,17 +28,58 @@ main{
     min-height: 100vh;
 }
 
-#news-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 400px;
-    gap: 2rem;
+main{
+    background-color: black;
 }
 
-#left-side{
+main h1{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+#news-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 400px;
+    grid-column: 1 / 4;
+}
+
+#sidebar{
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    border: 2px solid rgb(48, 46, 46);
+    border-radius: 50px;
+}
+
+#sidebar iframe{
+    display: flex;
+    justify-content: center;
+    max-width: 85%;
+    border: 2px solid rgb(48, 46, 46);
+    border-radius: 30px;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#sidebar h2{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+
+.game-card{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left-side{
     border-right: 2px solid rgb(48, 46, 46);
 }
 
-#right-side{
+.right-side{
     border-left: 2px solid rgb(48, 46, 46);
 }
 
@@ -51,7 +88,7 @@ main{
     text-decoration: none;
     font-size: 1rem;
     gap: 1rem;
-    font-family: "Outfit", sans-serif;
+    font-family: "Cal Sans", sans-serif;
 }
 
 #main-menu ul{
@@ -81,15 +118,166 @@ main{
     font-family: "Cal Sans", sans-serif;  
 }
 
-#lateral-direita{
-    background-color: #2FF0E8;
-
+footer{
+    border-top: 2px solid rgb(48, 46, 46);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#lateral-esquerda{
-    background-color: #2FF0E8;
+footer section ul{
+    list-style: none;
 }
 
-#sidebar{
-    grid-column: 4 / 5;
+footer section h3{
+    margin-bottom: 0.5rem;
+}
+
+
+.news-image{
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block; 
+}
+
+.team-image{
+    width: 35px;
+    height: 30px;
+    aspect-ratio: 16 / 9;
+    display: block; 
+}
+
+.game-logo{
+    width: 15%;
+    height: 10%;
+    aspect-ratio: 16 / 9;
+    display: block; 
+}
+
+.news-title{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+}
+
+.news-description{
+    margin-top: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.news-card{
+    padding: 2rem;
+}
+
+#sidebar h2{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+}
+
+.game-card p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+#social-links h3{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+}
+
+#games h3{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+}
+
+#games ul{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+#championships h3{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+}
+
+#championships ul{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+#copyrights{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.see-more-btn{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 200;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.see-more-btn:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    transition: 300ms;
+}
+
+.social-link-logo{
+    color: white;
+}
+
+/*CSS Relacionado a visualização de uma notícia específica*/
+
+#news-content h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+
+#news-content p{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+#news-content{
+    max-width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#news-image{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#news-content h1{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#news-footer{
+    display: flex;
+    flex-direction: row;
+}
+
+#news-footer h3{
+    margin-top: 2rem;
+}
+
+#author-image{
+    width: 8%;
+    height: 8%;
+    border-radius: 100px;
 }

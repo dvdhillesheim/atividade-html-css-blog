@@ -1,14 +1,12 @@
 Paleta de Cores:
-- Cor Primária: #2FF0E8
-- Cor Secundária: #000000
-- Cor para textos: #FFFFFF
+- Cor Primária: #000000
+- Cor Secundária: #FFFFFF
 
 Fontes Utilizadas:
-- Títulos: Candal
+- Títulos: Cal Sans
 - Textos: Hammersmith One
 
-Para falar a verdade eu me insipirei muito para não dizer que copiei o site dos lolEsports, acredito que o design deles
-é muito bonito e acredito que estas cores combinam com a proposta do site.
+--Obs: Fazer comentarios explicando a escolha.
 
 
 

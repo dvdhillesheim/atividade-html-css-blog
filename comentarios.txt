@@ -3,13 +3,9 @@ Paleta de Cores:
 - Cor Secundária: #FFFFFF
 
 Fontes Utilizadas:
-- Títulos: Cal Sans
-- Textos: Hammersmith One
+- Títulos: Cal Sans sans serif
+- Textos: Inter sans serif
 
---Obs: Fazer comentarios explicando a escolha.
-
-
-
-header:
-
-logo                       inicio    artigos    jogos da semana   sobre   contato
+--Obs: A escolha das cores e das fontes foram por causa que eu queria passar um
+ ar mais moderno, e por que também combina com o nicho de "E-sports", outros si-
+ tes utilizam cores ou fontes parecidas.
